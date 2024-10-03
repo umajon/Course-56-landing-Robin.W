@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.2">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap" rel="stylesheet">
+    <title>Robin Williams</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="#"><img src="./img/RobinW-name-img-white.svg" alt="Robin.W-logo"></a>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li class="contact-btn"><a href="#">Experience</a></li>
+                <li class="contact-btn"><a href="#">Work</a></li>
+                <li class="contact-btn"><a href="#">Photography</a></li>
+                <li class="contact-btn"><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <!-- Иконка бургер-меню с двумя линиями -->
+        <div class="burger-menu">
+            <div class="line top"></div>
+            <div class="line bottom"></div>
+        </div>
+    </div>
+
+
+    <section class="robinW">
+        <div class="container">
+            <div class="RobinWPhoto">
+                <img src="./img/RobinWphoto.jpg" alt="Robin W. photo">
+            </div>
+            <div class="containerText">
+                <h1>I’m Robin Williams. <br> A Product Designer <span class="grey">based in Italy.</span></h1>
+                <p>I’m probably the most passionate designer you will ever get to work with. If you have a great project
+                    that needs some amazing skills, I’m your guy.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="workExperience">
+        <h3>work experience</h3>
+        <h4>Companies I have worked for in the past</h4>
+
+        <div class="pastWorkPlaces">
+            <div class="google">
+                <h5>01</h5>
+                <h6><span class="company-name1">Google</span>, Interaction Designer</h6>
+                <span>I currently am the lead designer on the interaction design team for Google Play.</span>
+            </div>
+            <div class="facebook">
+                <h5>02</h5>
+                <h6><span class="company-name2">Facebook</span>, Product Designer</h6>
+                <span>I’ve worked on a wide variety of internal tools for facebook over the past 6 years.</span>
+            </div>
+            <div class="Dribbble">
+                <h5>03</h5>
+                <h6><span class="company-name3">Dribbble</span>, Graphic Designer</h6>
+                <span>I started my design career with Dribbble. I was incharge of creating illustrations for the
+                    platform.</span>
+            </div>
+        </div>
+
+    </section>
+
+
+
+</body>
+
+
+<script>document.querySelector('.burger-menu').addEventListener('click', function () {
+        document.querySelector('.nav-links').classList.toggle('active');
+    });</script>
+
+</html>

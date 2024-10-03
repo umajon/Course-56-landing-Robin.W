@@ -1,0 +1,357 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Sen", sans-serif;
+    box-sizing: border-box;
+    outline: 2px solid rgb(39, 157, 43);
+
+}
+
+body {
+    background: linear-gradient(to right,
+            #000000 36%,
+            #000000 0%,
+            #181823 20%,
+            #181823 100%);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 78.43px;
+    height: 24px;
+    margin: calc(0.7vw + 21.33px) calc(40.5vw + 43.09px) calc(0.7vw + 21.33px) calc(4.8vw + 2.66px);
+}
+
+
+/* Скрываем бургер-меню по умолчанию */
+.burger-menu {
+    display: none;
+    /* Скрываем по умолчанию */
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 15px;
+    /* Высота всего блока бургер-меню */
+    width: 20px;
+    /* Ширина блока соответствует максимальной ширине верхней линии */
+    margin-right: 20px;
+}
+
+.burger-menu .line {
+    background-color: #C4C4C4;
+    /* Цвет линий */
+    height: 3px;
+    /* Толщина всех линий */
+    border-radius: 5px;
+    /* Скругление углов линий */
+}
+
+.nav-links {
+    width: 476px;
+    margin-right: 72px;
+}
+
+.burger-menu .top {
+    width: 18px;
+    /* Ширина верхней линии */
+}
+
+.burger-menu .bottom {
+    width: 13px;
+    /* Ширина нижней линии */
+
+}
+
+/* Ссылки для навигации */
+.nav-links ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links ul li {
+    display: inline-block;
+    height: 88px;
+    width: 132px;
+    text-align: center;
+    padding-top: 32px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.contact-btn:hover {
+    background-color: #5221E6;
+    border-radius: 5%
+}
+
+section .robinW {
+    background: linear-gradient(to right,
+            #000000 36%,
+            #000000 0%,
+            #181823 20%,
+            #181823 100%);
+    background-repeat: no-repeat;
+
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 2000px;
+    /* Задаем максимальную ширину контейнера */
+}
+
+.container img {
+    width: 48%;
+    /* Изображение будет подстраиваться под ширину контейнера */
+    height: auto;
+    display: block;
+}
+
+.containerText {
+    position: absolute;
+    top: 38%;
+    /* Вертикально центрируем */
+    left: 44%;
+    /* Горизонтально центрируем */
+    transform: translate(-5%, -50%);
+    /* Центрируем относительно середины контейнера */
+    width: calc(40.7vw + 180.66px);
+    color: white;
+}
+
+
+.containerText {
+    margin-top: 90px;
+}
+
+h1 {
+    font-size: calc(4.3vw + 16.66px);
+    font-weight: 700;
+    line-height: calc(5.1vw + 20.05px);
+}
+
+.grey {
+    color: #FFFFFF80;
+    font-size: calc(4.3vw + 16.66px);
+    font-weight: 700;
+    line-height: calc(5.1vw + 20.05px);
+}
+
+.containerText p {
+    margin-top: calc(1.5vw + 10.66px);
+    font-size: 18px;
+}
+
+
+.workExperience {
+    background-color: #000000;
+}
+
+h3 {
+    font-size: 16px;
+    color: #8491A0;
+    text-transform: uppercase;
+    margin: calc(6.7vw + 24px) calc(95.2vw + 160.66px) 0 calc(4.8vw + 2.66px);
+    white-space: nowrap;
+    /* Предотвращает перенос текста */
+}
+
+h4 {
+    font-size: calc(2.1vw + 24px);
+    color: white;
+    margin: 8px calc(60.9vw + 199px) 40px calc(4.8vw + 2.66px);
+    width: calc(34.3vw + 150px);
+}
+
+.pastWorkPlaces {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px 40px;
+
+}
+
+.google,
+.facebook,
+.Dribbble {
+    width: calc(8.9vw + 288px);
+    margin: 40px 20px calc(8.9vw + 16px) calc(4.8vw + 3px);
+
+}
+
+.pastWorkPlaces h5 {
+    font-size: 117px;
+    color: #8491A0;
+    width: 126px;
+
+}
+
+.pastWorkPlaces h6 {
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 150%;
+    width: calc(1.8vw + 313px);
+    color: #FFFFFF;
+}
+
+
+.google,
+.facebook,
+.Dribbble,
+span {
+    width: calc(4.4vw + 304px);
+    font-size: 16px;
+    color: #8491A0;
+}
+
+.company-name1 {
+    color: #3CC74E;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 150%;
+    width: calc(1.8vw + 313px);
+}
+
+.company-name2 {
+    color: #609BFF;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 150%;
+    width: calc(1.8vw + 313px);
+}
+
+.company-name3 {
+    color: #E95D90;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 150%;
+    width: calc(1.8vw + 313px);
+}
+
+
+/* Медиазапрос для экранов шириной менее 600px */
+@media (max-width: 600px) {
+
+    body {
+        background: #000000;
+    }
+
+/*
+    .logo {
+        width: 78.43px;
+        height: 24px;
+        margin: 24px 217.57px 24px 20px;
+    }
+
+
+    .nav-links ul {
+        display: none;
+        justify-content: center;
+        background-color: #bba3a3;
+        width: 100%;
+        z-index: 100;
+        position: fixed;
+    }
+
+
+    .burger-menu {
+        display: flex;
+    }
+
+    .nav-links.active ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .nav-links ul li {
+        display: block;
+        padding: 15px;
+    }
+*/
+
+/* chatgpt*/
+.nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.3s ease;
+}
+
+.nav-links ul {
+    flex-direction: column;
+}
+
+.nav-links ul li {
+    margin: 20px 0;
+}
+
+/* Показываем бургер-меню на мобильных устройствах */
+.burger-menu {
+    display: flex;
+}
+
+/* Когда меню открыто */
+.nav-links.active {
+    right: 0;
+}
+}
+
+/* */
+    .robinW {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    h1 {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: calc(5.1vw + 20.05px);
+        width: 360px;
+        padding: 48px 20px 0px 20px;
+    }
+
+    .container {
+        width: 360px;
+
+        /* Задаем максимальную ширину контейнера */
+
+    }
+
+    .container img {
+        width: 100%;
+        /* Изображение будет подстраиваться под ширину контейнера */
+
+    }
+
+    .containerText {
+        margin: 48px 20px 0px 20px;
+        display: contents;
+        max-width: 320px;
+    }
+
+    .containerText p {
+        margin: 16px 20px 48px 20px;
+        font-size: 18px;
+        color: #FFFFFF;
+    }
+
+}
