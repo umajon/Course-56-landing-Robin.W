@@ -247,12 +247,8 @@ span {
     background-color: #FFF3E4;
 }
 
-.image-content {
-    width: 50%;
-}
-
-.image-content img {
-    width: 100%;
+.phcontent img {
+    width: calc(34.4vw + 240px);
 }
 
 .text-content {
