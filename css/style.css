@@ -248,7 +248,8 @@ span {
 }
 
 .phcontent img {
-    width: calc(34.4vw + 240px);
+    width: calc(34.4vw + 200px);
+
 }
 
 .text-content {
