@@ -241,6 +241,44 @@ span {
 }
 
 
+.phcontent {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #FFF3E4;
+}
+
+.image-content {
+    width: 50%;
+}
+
+.image-content img {
+    width: 100%;
+}
+
+.text-content {
+    width: 50%;
+} 
+
+.text-content h4 {
+    color: #181823;
+    width: calc(19.4vw + 250.33px);
+    margin: calc(6.7vw + 24px) calc(9.2vw + 13px) 24px calc(4.8vw + 2.66px);
+}
+
+.text-content p {
+    color: #5B6876;
+    width: calc(25vw + 185px);
+    margin: 0px calc(4.8vw + 2.66px) calc(4vw + 76.33px) calc(4.8vw + 2.66px);
+    font-size: 18px;
+}
+
+.text-content a {
+    color: #181823;
+    width: 120px;
+    margin: 0px calc(28.5vw + 121px) calc(7vw + 22px) calc(4.8vw + 2.66px);
+    display: inline-block;
+}
+
 /* Медиазапрос для экранов шириной менее 600px */
 @media (max-width: 600px) {
 
@@ -248,7 +286,7 @@ span {
         background: #000000;
     }
 
-/*
+
     .logo {
         width: 78.43px;
         height: 24px;
@@ -265,7 +303,6 @@ span {
         position: fixed;
     }
 
-
     .burger-menu {
         display: flex;
     }
@@ -280,42 +317,10 @@ span {
         display: block;
         padding: 15px;
     }
-*/
 
-/* chatgpt*/
-.nav-links {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    height: 100%;
-    width: 100%;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: right 0.3s ease;
-}
 
-.nav-links ul {
-    flex-direction: column;
-}
 
-.nav-links ul li {
-    margin: 20px 0;
-}
-
-/* Показываем бургер-меню на мобильных устройствах */
-.burger-menu {
-    display: flex;
-}
-
-/* Когда меню открыто */
-.nav-links.active {
-    right: 0;
-}
-}
-
-/* */
+    /* */
     .robinW {
         display: flex;
         flex-wrap: wrap;
@@ -331,15 +336,12 @@ span {
 
     .container {
         width: 360px;
-
         /* Задаем максимальную ширину контейнера */
-
     }
 
     .container img {
         width: 100%;
         /* Изображение будет подстраиваться под ширину контейнера */
-
     }
 
     .containerText {
