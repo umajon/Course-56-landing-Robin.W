@@ -254,7 +254,7 @@ span {
 
 .text-content {
     width: 50%;
-} 
+}
 
 .text-content h4 {
     color: #181823;
@@ -275,6 +275,63 @@ span {
     margin: 0px calc(28.5vw + 121px) calc(7vw + 22px) calc(4.8vw + 2.66px);
     display: inline-block;
 }
+
+
+.skillset {
+    background-color: #000000;
+}
+
+.skillsetContainer{
+    margin: calc(5.2vw + 45.33px) 0px calc(25.1vw + 42.33px) 0px;
+display: inline-block;
+}
+
+.aboutSkills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skillsetContainer,
+.productDesign,
+.motionDesign,
+.visualDesign,
+.photography {
+    width: calc(13vw + 273px);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.productDesign,
+.motionDesign,
+.visualDesign,
+.photography {
+    display: flex;
+    flex-wrap: wrap;
+    margin: calc(6.7vw + 24px) calc(0.4vw + 18.66px);
+}
+
+
+
+.productDesign h6,
+.motionDesign h6,
+.visualDesign h6,
+.photography h6 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 150%;
+    width: calc(1.8vw + 313px);
+    color: #FFFFFF;
+}
+
+.skillsetContainer p {
+    color: rgba(132, 145, 160, 1);
+    font-size: 16px;
+}
+
+
+
 
 /* Медиазапрос для экранов шириной менее 600px */
 @media (max-width: 600px) {
