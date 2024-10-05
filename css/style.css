@@ -3,8 +3,7 @@
     margin: 0;
     font-family: "Sen", sans-serif;
     box-sizing: border-box;
-    outline: 2px solid rgb(39, 157, 43);
-
+/* outline: 2px solid red; */
 }
 
 body {
@@ -19,12 +18,17 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: linear-gradient(to right,
+    #000000 36%,
+    #000000 0%,
+    #181823 20%,
+    #181823 100%);
 }
 
 .logo {
     width: 78.43px;
     height: 24px;
-    margin: calc(0.7vw + 21.33px) calc(40.5vw + 43.09px) calc(0.7vw + 21.33px) calc(4.8vw + 2.66px);
+    /* margin: calc(0.7vw + 21.33px) calc(40.5vw + 43.09px) calc(0.7vw + 21.33px) calc(4.8vw + 2.66px); */
 }
 
 
@@ -126,7 +130,7 @@ section .robinW {
     /* Горизонтально центрируем */
     transform: translate(-5%, -50%);
     /* Центрируем относительно середины контейнера */
-    width: calc(40.7vw + 180.66px);
+    /* width: calc(40.7vw + 180.66px); */
     color: white;
 }
 
@@ -177,7 +181,6 @@ h4 {
 .pastWorkPlaces {
     color: white;
     display: flex;
-    flex-wrap: wrap;
     gap: 0px 40px;
 
 }
@@ -243,13 +246,13 @@ span {
 
 .phcontent {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     background-color: #FFF3E4;
 }
 
 .phcontent img {
-    width: calc(34.4vw + 200px);
-
+    width: calc(33.3vw + 240px);
 }
 
 .text-content {
@@ -281,34 +284,33 @@ span {
     background-color: #000000;
 }
 
-.skillsetContainer{
-    margin: calc(5.2vw + 45.33px) 0px calc(25.1vw + 42.33px) 0px;
-display: inline-block;
+
+.skillsetContainerTxtBig {
+    display: inline;
+}
+
+
+
+.skillsetContainer h4 {
+    margin-top: calc(5.2vw + 45.33px);
+    
+}
+
+
+.skillsetContainerTxtBig p {
+    
 }
 
 .aboutSkills {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
 }
-
-.skillsetContainer,
-.productDesign,
-.motionDesign,
-.visualDesign,
-.photography {
-    width: calc(13vw + 273px);
-    display: flex;
-    flex-wrap: wrap;
-}
-
-
 
 .productDesign,
 .motionDesign,
 .visualDesign,
 .photography {
-    display: flex;
-    flex-wrap: wrap;
     margin: calc(6.7vw + 24px) calc(0.4vw + 18.66px);
 }
 
@@ -325,16 +327,73 @@ display: inline-block;
     color: #FFFFFF;
 }
 
+
 .skillsetContainer p {
+    color: #8491A0;
+    font-size: 18px;
+    width: calc(4.4vw + 304px);
+    margin: 0px ;
+}
+
+.aboutSkills p {
     color: rgba(132, 145, 160, 1);
     font-size: 16px;
+    width: 100%;
 }
 
 
 
+@media (max-width: 736px) {
+.aboutSkills {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.skillsetContainer p {
+    color: #8491A0;
+    font-size: 18px;
+    margin: 0px ;
+    width: auto;
+    text-align: center;
+}
+
+
+}
+
+@media (max-width:1490px) {
+
+    .text-content {
+        width: 100%;
+    }
+
+    .text-content h4,.text-content p {
+        width: auto;
+        text-align: center;
+    }
+
+
+    .workExperience h3, h4 {
+        text-align: center;
+        margin: 0px;
+        width: auto;
+
+    }
+
+    .pastWorkPlaces {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .phcontent {
+        justify-content: center;
+    }
+
+    .phcontent img {
+        width: 100%;
+    }
+}
 
 /* Медиазапрос для экранов шириной менее 600px */
-@media (max-width: 600px) {
+@media (max-width: 970px) {
 
     body {
         background: #000000;
@@ -351,8 +410,8 @@ display: inline-block;
     .nav-links ul {
         display: none;
         justify-content: center;
-        background-color: #bba3a3;
-        width: 100%;
+        background-color: #000000;
+        width: auto;
         z-index: 100;
         position: fixed;
     }
@@ -384,12 +443,10 @@ display: inline-block;
         font-size: 32px;
         font-weight: 700;
         line-height: calc(5.1vw + 20.05px);
-        width: 360px;
         padding: 48px 20px 0px 20px;
     }
 
     .container {
-        width: 360px;
         /* Задаем максимальную ширину контейнера */
     }
 
@@ -411,3 +468,5 @@ display: inline-block;
     }
 
 }
+
+@media () {}
