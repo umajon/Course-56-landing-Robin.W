@@ -28,7 +28,7 @@ body {
 .logo {
     width: 78.43px;
     height: 24px;
-    /* margin: calc(0.7vw + 21.33px) calc(40.5vw + 43.09px) calc(0.7vw + 21.33px) calc(4.8vw + 2.66px); */
+    margin: calc(0.7vw + 21.33px) calc(40.5vw + 43.09px) calc(0.7vw + 21.33px) calc(4.8vw + 2.66px);
 }
 
 
@@ -413,14 +413,13 @@ span {
 
 
 .projectContainer h3 {
-    /* text-align: left; */
+   
     width: 572px;
     margin: 120px 0px 8px 0px;
 }
 
 
 .projectContainer h4 {
-    /* text-align: left; */
     display: inline-block;
     width: auto;
     margin: 0px 0px 80px 0px;
@@ -433,12 +432,18 @@ span {
 }
 
 .project {
-    background-color: #000000;
     border-radius: 10px;
 }
 
-.project img {
+.project img, .project2 img, .project3 img, .project4 img {
     width: 100%;
+}
+
+.project2 .project4 .project2 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    grid-row-gap: 150px; /* Отступ между строками */
+    grid-column-gap: 50px;
 }
 
 .projectTxt {
@@ -456,34 +461,31 @@ span {
     color: white;
 }
 
-.projectTxt p {
-    color: #ccc;
+.projectTxt span {
+    color: #8491A0;
     font-size: 18px;
     margin-bottom: 13px;
     font-weight: 400;
     line-height: 27px;
-
-
 }
 
 .view-more {
-    margin-top: 30px;
+    align-content: center;
     text-align: center;
+    width: 247px;
+    height: 75px;
+    border: 1px solid #5221E6;
+    justify-self: center;
+    align-self: center;
+
 }
 
 .view-more a {
-    background-color: #551a8b;
     color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 18px;
+    text-transform: uppercase;
 }
-
-.view-more a:hover {
-    background-color: #444;
-}
-
 
 
 @media (max-width: 736px) {
@@ -518,6 +520,30 @@ span {
         width: 100%;
         /* Каждый элемент будет занимать всю ширину своей grid-ячейки */
     }
+
+
+
+    .projectContainer {
+        margin: 0px 20px 0px 20px;
+    }
+    
+.projectContainer h3 {
+    /* text-align: left; */
+    width: 100%;
+    /* margin: 120px 0px 8px 0px; */
+}
+
+.projectContainer h4 {
+    margin-top: 8px;
+}
+
+.projectGrid {
+    display: flex;
+    flex-wrap: wrap;
+}
+.view-more {
+    display: none;
+}
 
 }
 
