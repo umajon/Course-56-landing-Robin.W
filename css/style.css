@@ -290,19 +290,28 @@ span {
 }
 
 
-
 .skillsetContainer h4 {
     margin-top: calc(5.2vw + 45.33px);
 
 }
 
 
-.skillsetContainerTxtBig p {}
+.skillsetContainer p {
+    color: #8491A0;
+    font-size: 18px;
+    width: calc(4.4vw + 304px);
+    margin-left: 72px;
+}
+
 
 .aboutSkills {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
+}
+
+.aboutSkills img {
+    margin-bottom: 24px;
 }
 
 .productDesign,
@@ -311,8 +320,6 @@ span {
 .photography {
     margin: calc(6.7vw + 24px) calc(0.4vw + 18.66px);
 }
-
-
 
 .productDesign h6,
 .motionDesign h6,
@@ -323,14 +330,7 @@ span {
     line-height: 150%;
     width: calc(1.8vw + 313px);
     color: #FFFFFF;
-}
-
-
-.skillsetContainer p {
-    color: #8491A0;
-    font-size: 18px;
-    width: calc(4.4vw + 304px);
-    margin: 0px;
+    margin-bottom: 12px;
 }
 
 .aboutSkills p {
@@ -340,19 +340,9 @@ span {
 }
 
 
-
-.elements {
-    background-color: #000000;
-}
-
-
 .elementsList {
     overflow: hidden;
-    /* Скрываем элементы, выходящие за пределы контейнера */
     width: 100%;
-    /* Устанавливаем ширину для слайдера */
-
-
 }
 
 .element {
@@ -362,21 +352,13 @@ span {
     border: 1px solid #181823;
     width: 340px;
     height: 140px;
-    flex-shrink: 0;
-    /* Элементы не будут сжиматься */
-
-
 }
 
 .elementsList ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: calc(340px * 4);
-    /* Ширина всего списка (количество элементов * ширина одного элемента) */
     animation: slide 12s infinite linear;
-    /* Анимация на 12 секунд (4 элемента * 3 секунды на элемент) */
-
 }
 
 
@@ -388,14 +370,13 @@ span {
 
 
 @keyframes slide {
-    0% {
+    100% {
         transform: translateX(0);
-        /* Начальная позиция */
     }
 
     100% {
-        transform: translateX(-100%);
-        /* Сдвиг всех элементов на всю ширину слайдера */
+        transform: translateX(-50%);
+
     }
 }
 
@@ -404,16 +385,11 @@ span {
 }
 
 .projectContainer {
-    /* max-width: 1200px;
-     margin: 0 auto; 
-    padding: 20px;  */
     margin: 120px 72px auto 72px;
-
 }
 
 
 .projectContainer h3 {
-   
     width: 572px;
     margin: 120px 0px 8px 0px;
 }
@@ -435,14 +411,18 @@ span {
     border-radius: 10px;
 }
 
-.project img, .project2 img, .project3 img, .project4 img {
+.project img,
+.project2 img,
+.project3 img,
+.project4 img {
     width: 100%;
 }
 
 .project2 .project4 .project2 {
     margin-bottom: 0px;
     margin-top: 0px;
-    grid-row-gap: 150px; /* Отступ между строками */
+    grid-row-gap: 150px;
+    /* Отступ между строками */
     grid-column-gap: 50px;
 }
 
@@ -489,8 +469,14 @@ span {
 
 
 @media (max-width: 736px) {
-    .aboutSkills {
-        grid-template-columns: repeat(1, 1fr);
+    .skillsetContainer {
+        margin: 64px 20px 64px 20px;
+    }
+
+
+    .skillsetContainerTxtBig h4 {
+        text-align: left;
+        margin: 0px 0px 16px 0px;
     }
 
     .skillsetContainer p {
@@ -499,6 +485,10 @@ span {
         margin: 0px;
         width: auto;
         text-align: center;
+    }
+
+    .aboutSkills {
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .elementsList ul {
@@ -526,24 +516,25 @@ span {
     .projectContainer {
         margin: 0px 20px 0px 20px;
     }
-    
-.projectContainer h3 {
-    /* text-align: left; */
-    width: 100%;
-    /* margin: 120px 0px 8px 0px; */
-}
 
-.projectContainer h4 {
-    margin-top: 8px;
-}
+    .projectContainer h3 {
+        /* text-align: left; */
+        width: 100%;
+        /* margin: 120px 0px 8px 0px; */
+    }
 
-.projectGrid {
-    display: flex;
-    flex-wrap: wrap;
-}
-.view-more {
-    display: none;
-}
+    .projectContainer h4 {
+        margin-top: 8px;
+    }
+
+    .projectGrid {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .view-more {
+        display: none;
+    }
 
 }
 
