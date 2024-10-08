@@ -347,8 +347,10 @@ span {
 
 
 .elementsList {
-    overflow: hidden; /* Скрываем элементы, выходящие за пределы контейнера */
-    width: 100%; /* Устанавливаем ширину для слайдера */
+    overflow: hidden;
+    /* Скрываем элементы, выходящие за пределы контейнера */
+    width: 100%;
+    /* Устанавливаем ширину для слайдера */
 
 
 }
@@ -360,7 +362,8 @@ span {
     border: 1px solid #181823;
     width: 340px;
     height: 140px;
-    flex-shrink: 0; /* Элементы не будут сжиматься */
+    flex-shrink: 0;
+    /* Элементы не будут сжиматься */
 
 
 }
@@ -369,8 +372,10 @@ span {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: calc(340px * 4); /* Ширина всего списка (количество элементов * ширина одного элемента) */
-    animation: slide 12s infinite linear; /* Анимация на 12 секунд (4 элемента * 3 секунды на элемент) */
+    width: calc(340px * 4);
+    /* Ширина всего списка (количество элементов * ширина одного элемента) */
+    animation: slide 12s infinite linear;
+    /* Анимация на 12 секунд (4 элемента * 3 секунды на элемент) */
 
 }
 
@@ -384,11 +389,99 @@ span {
 
 @keyframes slide {
     0% {
-        transform: translateX(0); /* Начальная позиция */
+        transform: translateX(0);
+        /* Начальная позиция */
     }
+
     100% {
-        transform: translateX(-100%); /* Сдвиг всех элементов на всю ширину слайдера */
+        transform: translateX(-100%);
+        /* Сдвиг всех элементов на всю ширину слайдера */
     }
+}
+
+.myProjects {
+    background-color: #000000;
+}
+
+.projectContainer {
+    /* max-width: 1200px;
+     margin: 0 auto; 
+    padding: 20px;  */
+    margin: 120px 72px auto 72px;
+
+}
+
+
+.projectContainer h3 {
+    /* text-align: left; */
+    width: 572px;
+    margin: 120px 0px 8px 0px;
+}
+
+
+.projectContainer h4 {
+    /* text-align: left; */
+    display: inline-block;
+    width: auto;
+    margin: 0px 0px 80px 0px;
+}
+
+.projectGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 24px;
+}
+
+.project {
+    background-color: #000000;
+    border-radius: 10px;
+}
+
+.project img {
+    width: 100%;
+}
+
+.projectTxt {
+    /* padding: 10px 0; */
+    background-color: #181823;
+    margin-top: -5px;
+    padding: 40px 32px;
+    margin-bottom: 24px;
+}
+
+
+.projectTxt h6 {
+    font-size: 24px;
+    margin-bottom: 13px;
+    color: white;
+}
+
+.projectTxt p {
+    color: #ccc;
+    font-size: 18px;
+    margin-bottom: 13px;
+    font-weight: 400;
+    line-height: 27px;
+
+
+}
+
+.view-more {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.view-more a {
+    background-color: #551a8b;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.view-more a:hover {
+    background-color: #444;
 }
 
 
@@ -407,18 +500,24 @@ span {
     }
 
     .elementsList ul {
-        display: grid; /* Переключение на grid-сетку */
-        grid-template-columns: repeat(2, 1fr); /* 2 элемента на горизонтальной оси */
-        grid-template-rows: repeat(2, auto); /* 2 элемента на вертикальной оси */
-        gap: 10px; /* Зазор между элементами */
-        width: 100%; /* Ширина списка будет 100% */
-        animation: none; /* Отключаем анимацию для grid */
+        display: grid;
+        /* Переключение на grid-сетку */
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 элемента на горизонтальной оси */
+        grid-template-rows: repeat(2, auto);
+        /* 2 элемента на вертикальной оси */
+        gap: 10px;
+        /* Зазор между элементами */
+        width: 100%;
+        /* Ширина списка будет 100% */
+        animation: none;
+        /* Отключаем анимацию для grid */
     }
 
     .element {
-        width: 100%; /* Каждый элемент будет занимать всю ширину своей grid-ячейки */
+        width: 100%;
+        /* Каждый элемент будет занимать всю ширину своей grid-ячейки */
     }
-
 
 }
 
