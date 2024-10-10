@@ -4,6 +4,7 @@
     font-family: "Sen", sans-serif;
     box-sizing: border-box;
     /* outline: 2px solid red; */
+    /* outline: 2px solid red; */
 }
 
 body {
@@ -19,6 +20,10 @@ body {
     justify-content: space-between;
     align-items: center;
     background: linear-gradient(to right,
+            #000000 36%,
+            #000000 0%,
+            #181823 20%,
+            #181823 100%);
             #000000 36%,
             #000000 0%,
             #181823 20%,
@@ -314,11 +319,16 @@ span {
     text-align: left;
 }
 
+
 .aboutSkills {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 48px;
     flex: 2; /* Занять две части пространства */
+}
+
+.aboutSkills img {
+    margin-bottom: 24px;
 }
 
 .aboutSkills div {
@@ -336,6 +346,7 @@ span {
     font-size: 24px;
     font-weight: 700;
     color: #FFFFFF;
+    margin-bottom: 12px;
     margin-bottom: 12px;
 }
 
@@ -605,11 +616,15 @@ span {
 
     .text-content h4,
     .text-content p {
+    .text-content h4,
+    .text-content p {
         width: auto;
         text-align: center;
     }
 
 
+    .workExperience h3,
+    h4 {
     .workExperience h3,
     h4 {
         text-align: center;
