@@ -251,6 +251,10 @@ span {
     background-color: #FFF3E4;
 }
 
+#glassballMobile {
+    display: none;
+}
+
 .phcontent img {
     width: calc(33.3vw + 240px);
 }
@@ -278,27 +282,34 @@ span {
     margin: 0px calc(28.5vw + 121px) calc(7vw + 22px) calc(4.8vw + 2.66px);
     display: inline-block;
 }
+
 /*чат гпт */
 .skillset {
     background-color: #000000;
-    padding-bottom:120px;
+    padding-bottom: 120px;
     padding-top: 120px;
     color: #FFFFFF;
 }
 
 .skillsetContainer {
-    display: flex; /* Flexbox для горизонтального выравнивания */
-    align-items: flex-start; /* Выровнять по верхней части */
-    justify-content: space-between; /* Распределить пространство */
-    gap: 24px 140px; /* Отступ между колонками */
+    display: flex;
+    /* Flexbox для горизонтального выравнивания */
+    align-items: flex-start;
+    /* Выровнять по верхней части */
+    justify-content: space-between;
+    /* Распределить пространство */
+    gap: 24px 140px;
+    /* Отступ между колонками */
     margin-left: 72px;
-    
+
 }
 
 .skillsetContainerTxtBig {
-    flex: 1; /* Занять одну часть пространства */
-    max-width: 416px; /* Ограничить ширину текста */
-    text-align: left;    
+    flex: 1;
+    /* Занять одну часть пространства */
+    max-width: 416px;
+    /* Ограничить ширину текста */
+    text-align: left;
 }
 
 .skillsetContainerTxtBig h4 {
@@ -318,7 +329,8 @@ span {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 48px;
-    flex: 2; /* Занять две части пространства */
+    flex: 2;
+    /* Занять две части пространства */
 }
 
 .aboutSkills div {
@@ -346,7 +358,10 @@ span {
 }
 
 
-.productDesign, .motionDesign, .visualDesign, .photography {
+.productDesign,
+.motionDesign,
+.visualDesign,
+.photography {
     margin-bottom: 40px;
 }
 
@@ -360,8 +375,9 @@ span {
     justify-content: space-between;
     align-items: center;
     animation: slide 12s infinite linear;
-    width: calc(340px * 12); /* 6 элементов + их копии, всего 12 */
-} 
+    width: calc(340px * 12);
+    /* 6 элементов + их копии, всего 12 */
+}
 
 .element {
     display: flex;
@@ -387,7 +403,7 @@ span {
         transform: translateX(-50%);
 
     }
-} 
+}
 
 .myProjects {
     background-color: #000000;
@@ -414,7 +430,7 @@ span {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 8fr;
-    grid-template-areas: 
+    grid-template-areas:
         "project1 project2"
         "project1 project2"
         "project1 project4"
@@ -423,8 +439,8 @@ span {
         "project3 project4"
         "project3 view-more"
         "project3 view-more";
-        gap: 24px 24px;
-        margin: 0px 0px 0px 0px;
+    gap: 24px 24px;
+    margin: 0px 0px 0px 0px;
 }
 
 .project1 {
@@ -442,16 +458,19 @@ span {
 .project4 {
     grid-area: project4;
 }
-.view-more 
-{
+
+.view-more {
     grid-area: view-more;
 }
 
 .projectGrid img {
     width: 100%;
-} 
+}
 
-.project1, .project2, .project3, .project4 {
+.project1,
+.project2,
+.project3,
+.project4 {
     background-color: #000000;
     padding: 20px;
     border-radius: 10px;
@@ -497,12 +516,15 @@ span {
     text-transform: uppercase;
 }
 
-/* */
 .instagramContent {
     display: flex;
     justify-content: end;
     flex-wrap: wrap;
-    background-color:#FBE4FF;
+    background-color: #FBE4FF;
+}
+
+#glassballMobile {
+    display: none;
 }
 
 .instagramContent img {
@@ -524,7 +546,7 @@ span {
     width: calc(25vw + 185px);
     margin: 0px calc(4.8vw + 2.66px) calc(4vw + 76.33px) calc(4.8vw + 2.66px);
     font-size: 18px;
-    line-height: 27px;
+    line-height: 150%;
 }
 
 .text-instagram a {
@@ -532,23 +554,65 @@ span {
     width: 120px;
     margin: 0px calc(28.5vw + 121px) calc(7vw + 22px) calc(4.8vw + 2.66px);
     display: inline;
-    text-decoration-line:underline ;
+    text-decoration-line: underline;
     text-underline-offset: 10px;
 }
 
+.dribbbleWork{
+    background-color:#000000;
+}
+
+.dribbbleWorkContent {
+    display: block;
+}
+
+.dribbbleWorkContentTxt {
+    padding-top: calc(5.2vw + 45.33px);
+    margin: 0 calc(55.7vw + 180.66px) auto calc(15vw + 34px);
+    width: calc(29.3vw + 214.66px);
+}
 
 
+.dribbbleWorkContentTxt h4 {
+    margin:unset;
+    font-size: 55px;
+}
+
+.dribbbleWorkContentTxt p {
+    color: #5B6876;
+    width: 100%;
+    /* margin: 0px calc(4.8vw + 2.66px) calc(4vw + 76.33px) calc(4.8vw + 2.66px); */
+    font-size: 18px;
+    line-height: 150%;
+    margin-top: 24px;
+    margin-bottom: 40px;
+}
+
+.dribbbleWorkContentTxt a {
+    color: #FFFFFF;
+    width: auto;
+    text-decoration-line: underline;
+    text-underline-offset: 10px;
+    line-height: 150%;
+}
+
+.dribbbleWorkContent img {
+    width: calc(66.3vw + 121.3px);
+    margin: calc(5.2vw + 45.33px) calc(15vw + 34px);
+}
 
 @media (max-width: 736px) {
-    
+
     .skillsetContainer {
-        flex-direction: column; /* На мобильных устройствах размещаем вертикально */
+        flex-direction: column;
+        /* На мобильных устройствах размещаем вертикально */
         margin-left: 20px;
     }
 
     .aboutSkills {
-        grid-template-columns: 1fr; /* Все элементы в одну колонку */
-    } 
+        grid-template-columns: 1fr;
+        /* Все элементы в одну колонку */
+    }
 
 
     .elementsList ul {
@@ -565,9 +629,12 @@ span {
         animation: none;
         /* Отключаем анимацию для grid */
     }
+
     .element.duplicate {
-        display: none; /* Скрываем дублированные элементы на маленьких экранах */
+        display: none;
+        /* Скрываем дублированные элементы на маленьких экранах */
     }
+
     .element {
         width: 100%;
         /* Каждый элемент будет занимать всю ширину своей grid-ячейки */
@@ -594,6 +661,25 @@ span {
     .view-more {
         display: none;
     }
+
+
+    .dribbbleWorkContentTxt {
+        margin: 0px 20px;
+        width: calc(29.3vw + 214.66px);
+    }
+    
+    
+    .dribbbleWorkContentTxt h4 {
+        margin:unset;
+        text-align: left;
+    }
+    
+    
+    .dribbbleWorkContent img {
+        width: 90%;
+        margin: 64px 20px 64px 20px;
+    }
+
 
 }
 
@@ -627,9 +713,56 @@ span {
         justify-content: center;
     }
 
+
+    #glassball {
+        display: none;
+    }
+
+
     .phcontent img {
         width: 100%;
     }
+
+
+    .text-instagram {
+        width: 100%;
+    }
+
+    .text-instagram h4,
+    .text-instagram p {
+        width: auto;
+        text-align: left;
+    }
+
+    .text-instagram p {
+        margin-bottom: 125.75px;
+    }
+
+    .instagramContent {
+        justify-content: left;
+    }
+
+    #planetail {
+        display: none;
+    }
+
+    #glassballMobile {
+        display: unset;
+        margin-top: 48px;
+    }
+
+    .instagramContent img {
+        width: 100%;
+    }
+
+
+    .text-instagram a {
+        /* padding-bottom: 48px; */
+        display: inline;
+        text-decoration-line: underline;
+        text-underline-offset: 10px;
+    }
+
 }
 
 
@@ -641,8 +774,8 @@ span {
     }
 
     .navbar {
-        background-color:#000000;
-        justify-content:unset; 
+        background-color: #000000;
+        justify-content: unset;
     }
 
     .logo {
@@ -650,20 +783,21 @@ span {
         height: 24px;
         margin: 24px 217.57px 24px 20px;
     }
-.nav-links{
-    width: auto;
-    margin-right: auto;
-}
+
+    .nav-links {
+        width: auto;
+        margin-right: auto;
+    }
 
     .nav-links ul {
         display: none;
         justify-content: center;
-        background-color: rgba(0,0,0,0.4);
+        background-color: rgba(0, 0, 0, 0.4);
         width: auto;
         z-index: 1;
         position: fixed;
         top: 45px;
-        left: 256px;      
+        left: 256px;
     }
 
     .burger-menu {
