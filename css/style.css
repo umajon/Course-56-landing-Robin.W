@@ -558,8 +558,8 @@ span {
     text-underline-offset: 10px;
 }
 
-.dribbbleWork{
-    background-color:#000000;
+.dribbbleWork {
+    background-color: #000000;
 }
 
 .dribbbleWorkContent {
@@ -574,7 +574,7 @@ span {
 
 
 .dribbbleWorkContentTxt h4 {
-    margin:unset;
+    margin: unset;
     font-size: 55px;
 }
 
@@ -600,6 +600,114 @@ span {
     width: calc(66.3vw + 121.3px);
     margin: calc(5.2vw + 45.33px) calc(15vw + 34px);
 }
+
+.peopleSay {
+    background-color: #000000;
+    padding-bottom: 153px;
+    padding-top: 153px;
+
+}
+
+.peopleSayElements img {
+    width: 100%;
+}
+
+.peopleSayElements {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 6fr;
+    grid-template-areas:
+        "peopleSayElement1 peopleSayElement2"
+        "peopleSayElement1 peopleSayElement2"
+        "peopleSayElement1 peopleSayElement3"
+        "peopleSayElement1 peopleSayElement3"
+        "peopleSayElement1 peopleSayElement4"
+        "peopleSayElement1 peopleSayElement4";
+    gap: 120px 24px;
+    margin: 0px 0px 0px 0px;
+
+}
+
+
+.peopleSayElement1 {
+    grid-area: peopleSayElement1;
+    width: 636px;
+    margin: 120px 24px auto 72px;
+}
+
+
+.peopleSayElement1 h4 {
+    margin: unset;
+    padding-right: 48px;
+}
+
+
+.peopleSayElement1 p {
+    margin: unset;
+    color: #8491A0;
+    font-size: 18px;
+    margin-top: 24px;
+    margin-bottom: 40px;
+    font-weight: 400;
+    line-height: 150%;
+    padding-right: 48px;
+}
+
+.peopleSayElement1 a {
+    color: #FFFFFF;
+    width: auto;
+    text-decoration-line: underline;
+    text-underline-offset: 10px;
+    line-height: 150%;
+}
+
+.peopleSayElement2 {
+    grid-area: peopleSayElement2;
+    background-color: #000000;
+    width: 636px;
+    margin-top: 120px;
+}
+
+.peopleSayElement3 {
+    grid-area: peopleSayElement3;
+    background-color: #000000;
+    width: 636px;
+
+}
+
+.peopleSayElement4 {
+    grid-area: peopleSayElement4;
+    background-color: #000000;
+    width: 636px;
+}
+
+.peopleSayElement1Txt, .peopleSayElement2Txt, .peopleSayElement3Txt {
+    outline: 1px solid rgba(91, 104, 118, 1);
+    padding-bottom: 64px;
+}
+
+.peopleSayElement1Txt h6, .peopleSayElement2Txt h6, .peopleSayElement3Txt h6 {
+    color: rgba(255, 255, 255, 1);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 150%;
+    margin: -3px 64px 64px 64px;
+    padding-top: 64px;
+}
+
+.peopleSayElement1Txt p, .peopleSayElement2Txt p, .peopleSayElement3Txt p {
+    color: rgba(91, 104, 118, 1);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 150%;
+    margin: 4px 64px 0px 64px;
+    padding-top: 0px;
+}
+
+
+
+
+
 
 @media (max-width: 736px) {
 
@@ -667,14 +775,14 @@ span {
         margin: 0px 20px;
         width: calc(29.3vw + 214.66px);
     }
-    
-    
+
+
     .dribbbleWorkContentTxt h4 {
-        margin:unset;
+        margin: unset;
         text-align: left;
     }
-    
-    
+
+
     .dribbbleWorkContent img {
         width: 90%;
         margin: 64px 20px 64px 20px;
