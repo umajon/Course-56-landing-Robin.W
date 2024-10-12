@@ -711,10 +711,15 @@ span {
 
 @media (max-width: 736px) {
 
+    .skillset {
+        padding-bottom: 0px;
+    }
+    
     .skillsetContainer {
         flex-direction: column;
         /* На мобильных устройствах размещаем вертикально */
         margin-left: 20px;
+        
     }
 
     .aboutSkills {
@@ -749,12 +754,12 @@ span {
     }
 
     .projectContainer {
-        margin: 0px 20px 20px 20px;
+        margin: 64px 20px 20px 20px;
     }
 
     .projectContainer h3 {
         width: 100%;
-        margin: 120px 0px 8px 0px;
+        margin: 0px 0px 8px 0px;
     }
 
     .projectContainer h4 {
@@ -812,7 +817,7 @@ span {
     }
 
     .peopleSayElement2, .peopleSayElement3, .peopleSayElement4  {
-        width: 333px;
+        width: 360px;
         margin: 0px 20px 0px 20px;
     }
     .peopleSayElement1Txt, .peopleSayElement2Txt, .peopleSayElement3Txt {
