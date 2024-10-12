@@ -598,7 +598,7 @@ span {
 
 .dribbbleWorkContent img {
     width: calc(66.3vw + 121.3px);
-    margin: calc(5.2vw + 45.33px) calc(15vw + 34px);
+    margin: calc(5.2vw + 45.33px) 182px auto 180px;
 }
 
 .peopleSay {
@@ -703,9 +703,6 @@ span {
     margin: 4px 64px 0px 64px;
     padding-top: 0px;
 }
-
-
-
 
 
 
