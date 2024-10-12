@@ -749,7 +749,7 @@ span {
     }
 
     .projectContainer {
-        margin: 0px 20px 0px 20px;
+        margin: 0px 20px 20px 20px;
     }
 
     .projectContainer h3 {
@@ -785,8 +785,50 @@ span {
 
     .dribbbleWorkContent img {
         width: 90%;
-        margin: 64px 20px 64px 20px;
+        margin: 64px 20px 0px 20px;
     }
+
+
+    .peopleSay {
+        padding-bottom: 48px;
+        padding-top: 0px;
+    
+    }
+    .peopleSayElements {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 64px;
+    }
+
+    .peopleSayElement1 {
+        width: 100%;
+        margin: 48px 20px 0px 20px;
+        text-align: left;
+    }
+
+    .peopleSayElement1 h4 {
+        text-align: left;
+
+    }
+
+    .peopleSayElement2, .peopleSayElement3, .peopleSayElement4  {
+        width: 333px;
+        margin: 0px 20px 0px 20px;
+    }
+    .peopleSayElement1Txt, .peopleSayElement2Txt, .peopleSayElement3Txt {
+        padding-bottom: 32px;
+    }
+    .peopleSayElement1Txt h6, .peopleSayElement2Txt h6, .peopleSayElement3Txt h6 {
+        margin: -3px 32px 64px 32px;
+        padding-top: 32px;
+    }
+
+    .peopleSayElement1Txt p, .peopleSayElement2Txt p, .peopleSayElement3Txt p {
+        margin: 4px 32px 0px 32px;
+        padding-top: 0px;
+    }
+
+
 
 
 }
