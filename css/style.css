@@ -707,12 +707,12 @@ span {
 /**/
 .photography-section {
     padding-top: 1px;
-    margin: 0 0 0 0;
+    margin: 0px 0px 0px 0px;
     background-color: #000000;
 }
 
 .content h4 {
-    margin: 120px 780px 24px 72px;
+    margin: 20px 780px 24px 72px;
 }
 
 .content p {
