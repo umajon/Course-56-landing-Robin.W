@@ -704,9 +704,100 @@ span {
     padding-top: 0px;
 }
 
+/**/
+.photography-section {
+    padding-top: 1px;
+    margin: 0 0 0 0;
+    background-color: #000000;
+}
+
+.content h4 {
+    margin: 120px 780px 24px 72px;
+}
+
+.content p {
+    font-size: 18px;
+    margin: 0px 780px 64px 72px;
+    color: rgba(132, 145, 160, 1);
+}
+
+.buttons {
+    margin: 0px 878px 40px 72px;
+}
+.btn {
+    background-color: #000; /* Цвет фона для неактивных кнопок */
+    color: #fff;            /* Цвет текста для неактивных кнопок */
+    border: 1px solid rgba(82, 33, 230, 1); /* Граница для неактивных кнопок */
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn.active {
+    background-color: rgba(82, 33, 230, 1); /* Цвет фона для активной кнопки */
+    color: #fff;                            /* Цвет текста для активной кнопки */
+    
+}
+
+.btn:hover {
+    background-color: rgba(82, 33, 230, 0.8); /* При наведении */
+    border-color: rgba(82, 33, 230, 1);
+}
+
+.gallery {
+    display: flex;
+    justify-content: left;
+    gap: 24px;
+    margin: 0px 72px 0px 80px;
+    padding-bottom: 72px;
+}
+
+.image {
+    width: 320px;
+    height: 420px;
+    border-radius: 2px;
+    display: none; /* Images are hidden initially */
+}
+
+.image.active {
+    display: block;
+}
 
 
 @media (max-width: 736px) {
+
+/**/
+
+.content h4 {
+    margin: 48px 137px 0px 20px;
+    text-align: left;
+}
+
+.content p {
+    font-size: 18px;
+    margin: 24px 20px 0px 20px;
+    color: rgba(132, 145, 160, 1);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Две колонки */
+    grid-gap: 10px; /* Расстояние между кнопками */
+    margin: 40px 20px 40px 20px;
+}
+
+.gallery {
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+    margin: 0px 20px 0px 20px;
+}
+
+.image {
+    width: 100%;
+    max-height: auto;
+}
 
     .skillset {
         padding-bottom: 0px;
