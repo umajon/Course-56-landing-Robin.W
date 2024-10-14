@@ -681,12 +681,16 @@ span {
     width: 636px;
 }
 
-.peopleSayElement1Txt, .peopleSayElement2Txt, .peopleSayElement3Txt {
+.peopleSayElement1Txt,
+.peopleSayElement2Txt,
+.peopleSayElement3Txt {
     outline: 1px solid rgba(91, 104, 118, 1);
     padding-bottom: 64px;
 }
 
-.peopleSayElement1Txt h6, .peopleSayElement2Txt h6, .peopleSayElement3Txt h6 {
+.peopleSayElement1Txt h6,
+.peopleSayElement2Txt h6,
+.peopleSayElement3Txt h6 {
     color: rgba(255, 255, 255, 1);
     font-size: 24px;
     font-weight: 700;
@@ -695,7 +699,9 @@ span {
     padding-top: 64px;
 }
 
-.peopleSayElement1Txt p, .peopleSayElement2Txt p, .peopleSayElement3Txt p {
+.peopleSayElement1Txt p,
+.peopleSayElement2Txt p,
+.peopleSayElement3Txt p {
     color: rgba(91, 104, 118, 1);
     font-size: 18px;
     font-weight: 700;
@@ -724,10 +730,14 @@ span {
 .buttons {
     margin: 0px 878px 40px 72px;
 }
+
 .btn {
-    background-color: #000; /* Цвет фона для неактивных кнопок */
-    color: #fff;            /* Цвет текста для неактивных кнопок */
-    border: 1px solid rgba(82, 33, 230, 1); /* Граница для неактивных кнопок */
+    background-color: #000;
+    /* Цвет фона для неактивных кнопок */
+    color: #fff;
+    /* Цвет текста для неактивных кнопок */
+    border: 1px solid rgba(82, 33, 230, 1);
+    /* Граница для неактивных кнопок */
     padding: 10px 20px;
     margin: 0 10px;
     cursor: pointer;
@@ -735,13 +745,16 @@ span {
 }
 
 .btn.active {
-    background-color: rgba(82, 33, 230, 1); /* Цвет фона для активной кнопки */
-    color: #fff;                            /* Цвет текста для активной кнопки */
-    
+    background-color: rgba(82, 33, 230, 1);
+    /* Цвет фона для активной кнопки */
+    color: #fff;
+    /* Цвет текста для активной кнопки */
+
 }
 
 .btn:hover {
-    background-color: rgba(82, 33, 230, 0.8); /* При наведении */
+    background-color: rgba(82, 33, 230, 0.8);
+    /* При наведении */
     border-color: rgba(82, 33, 230, 1);
 }
 
@@ -757,57 +770,194 @@ span {
     width: 320px;
     height: 420px;
     border-radius: 2px;
-    display: none; /* Images are hidden initially */
+    display: none;
+    /* Images are hidden initially */
 }
 
 .image.active {
     display: block;
 }
 
+/**/
 
-@media (max-width: 736px) {
+.messageContainer {
+    display: flex;
+    justify-content: left;
+    background-color: #000000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding-bottom: 120px;
+}
+
+.messageContainerTxt {
+    display: inline-block;
+    margin: 0px 24px 0px 182px;
+    width: 526px;
+
+}
+
+.messageContainerTxt h4 {
+    margin: 0px 0px 0px 0px;
+    /* display: block; */
+}
+
+.messageContainerTxt p {
+    color: #777;
+    margin: 0px 0px 0px 0px;
+    /* display: block; */
+}
+
+.messageContainer form {
+    display: flex;
+    flex-direction: column;
+    width: 526px;
+}
+
+input,
+textarea {
+    background-color: #222;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    color: #fff;
+    font-size: 16px;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    background-color: #333;
+}
+
+.messageContainer button {
+    background-color: #5221E6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.messageContainer button:hover {
+    background-color: #5221E6;
+}
 
 /**/
 
-.content h4 {
-    margin: 48px 137px 0px 20px;
-    text-align: left;
+footer {
+    background-color: #181823;
+    color: white;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
-.content p {
-    font-size: 18px;
-    margin: 24px 20px 0px 20px;
-    color: rgba(132, 145, 160, 1);
+.logotips {
+    margin: 0px 0px 0px 72px;
 }
 
-.buttons {
+.logo {
+    margin: 0px 400px 40px 0px;
+}
+
+.logo img {
+    height: 40px;
+    width: 130px;
+
+}
+
+.social-links {
+    display: flex;
+    gap: 16px;
+}
+
+
+nav {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Две колонки */
-    grid-gap: 10px; /* Расстояние между кнопками */
-    margin: 40px 20px 40px 20px;
+    grid-template-columns: repeat(2, auto);
+    gap: 24px 120px;
+    /* Расстояние между строками и столбцами */
+    height: 40px;
+    width: auto;
+    margin-left: 300px;
 }
 
-.gallery {
-    flex-direction: column;
-    gap: 24px;
-    justify-content: center;
-    margin: 0px 20px 0px 20px;
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 16px;
 }
 
-.image {
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Блок для копирайта */
+.copyright {
     width: 100%;
-    max-height: auto;
+
+    margin-top: 142px;
+    margin-left: 72px;
+    padding-top: 20px;
 }
+
+.copyright a {
+    color: #8491A0;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+/**/
+
+@media (max-width: 736px) {
+
+    .content h4 {
+        margin: 48px 137px 0px 20px;
+        text-align: left;
+    }
+
+    .content p {
+        font-size: 18px;
+        margin: 24px 20px 0px 20px;
+        color: rgba(132, 145, 160, 1);
+    }
+
+    .buttons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* Две колонки */
+        grid-gap: 10px;
+        /* Расстояние между кнопками */
+        margin: 40px 20px 40px 20px;
+    }
+
+    .gallery {
+        flex-direction: column;
+        gap: 24px;
+        justify-content: center;
+        margin: 0px 20px 0px 20px;
+    }
+
+    .image {
+        width: 100%;
+        max-height: auto;
+    }
 
     .skillset {
         padding-bottom: 0px;
     }
-    
+
     .skillsetContainer {
         flex-direction: column;
         /* На мобильных устройствах размещаем вертикально */
         margin-left: 20px;
-        
+
     }
 
     .aboutSkills {
@@ -885,8 +1035,9 @@ span {
     .peopleSay {
         padding-bottom: 48px;
         padding-top: 0px;
-    
+
     }
+
     .peopleSayElements {
         display: flex;
         flex-wrap: wrap;
@@ -904,25 +1055,109 @@ span {
 
     }
 
-    .peopleSayElement2, .peopleSayElement3, .peopleSayElement4  {
+    .peopleSayElement2,
+    .peopleSayElement3,
+    .peopleSayElement4 {
         width: 360px;
         margin: 0px 20px 0px 20px;
     }
-    .peopleSayElement1Txt, .peopleSayElement2Txt, .peopleSayElement3Txt {
+
+    .peopleSayElement1Txt,
+    .peopleSayElement2Txt,
+    .peopleSayElement3Txt {
         padding-bottom: 32px;
     }
-    .peopleSayElement1Txt h6, .peopleSayElement2Txt h6, .peopleSayElement3Txt h6 {
+
+    .peopleSayElement1Txt h6,
+    .peopleSayElement2Txt h6,
+    .peopleSayElement3Txt h6 {
         margin: -3px 32px 64px 32px;
         padding-top: 32px;
     }
 
-    .peopleSayElement1Txt p, .peopleSayElement2Txt p, .peopleSayElement3Txt p {
+    .peopleSayElement1Txt p,
+    .peopleSayElement2Txt p,
+    .peopleSayElement3Txt p {
         margin: 4px 32px 0px 32px;
         padding-top: 0px;
     }
 
+    .messageContainer {
+        flex-direction: column;
+        padding-bottom: 48px;
+        margin: 0px 20px 0px 20px;
+    }
+
+    .messageContainerTxt {
+        display: inline-block;
+        margin: 0px 0px 48px 0px;
+        width: auto;
+
+    }
 
 
+    .messageContainerTxt h4 {
+        margin: 0px 0px 16px 0px;
+        text-align: left;
+        width: auto;
+        /* display: block; */
+    }
+
+    .messageContainerTxt p {
+        color: #777;
+        margin: 0px 0px 0px 0px;
+        width: auto;
+        /* display: block; */
+    }
+
+    .messageContainer form {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        gap: 40px;
+    }
+
+    footer {
+        flex-direction: column;
+
+    }
+
+    .logotips {
+        margin: 0px 0px 0px 0px;
+    }
+
+    .logo {
+        margin: 0px 20px 32px 20px;
+    }
+    .social-links {
+        margin: 0px 20px 0px 20px;
+    }
+
+    nav {
+        display: grid;
+        grid-template-columns: unset;
+        text-align: left;
+        margin-top: 20px;
+        height: auto;
+        margin-top: 48px;
+        margin-right: 186px;
+        margin-left:20px;
+        margin-bottom: 48px;
+    }
+
+     nav a {
+        display: block;
+        margin: 10px 0;
+        line-height: 24px;
+    }
+
+    .copyright {
+        margin-top: 48px;
+        margin-right: 186px;
+        margin-left:20px;
+        margin-bottom: 48px;
+        width: 70%;
+    }
 
 }
 
