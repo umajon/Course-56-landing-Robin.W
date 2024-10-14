@@ -1,6 +1,12 @@
 
+
 document.querySelector('.burger-menu').addEventListener('click', function () {
     document.querySelector('.nav-links').classList.toggle('active');
+});
+
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert('Send successfully!');
 });
 
 function showImages(country) {
@@ -25,3 +31,4 @@ function showImages(country) {
 document.addEventListener('DOMContentLoaded', () => {
     showImages('italy');
 });
+
